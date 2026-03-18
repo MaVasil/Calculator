@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="calculator">
+        <h1>SCIENTIFIC CALCULATOR</h1>
+        <input type="text" id="display" readonly/>
+
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button onclick="add('1')">1</button>
+            <button onclick="add('2')">2</button>
+            <button onclick="add('3')">3</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="backspace()">⌫</button>
+            <button onclick="calculate()">=</button>
+
+            <!-- Row 2 -->
+            <button onclick="add('4')">4</button>
+            <button onclick="add('5')">5</button>
+            <button onclick="add('6')">6</button>
+            <button onclick="add('-')">-</button>
+            <button onclick="add('%')">%</button>
+            <button onclick="scin('cos')">cos</button>
+
+            <!-- Row 3 -->
+            <button onclick="add('7')">7</button>
+            <button onclick="add('8')">8</button>
+            <button onclick="add('9')">9</button>
+            <button onclick="add('*')">*</button>
+            <button onclick="factorial()">n!</button>
+            <button onclick="scin('sin')">sin</button>
+
+            <!-- Row 4 -->
+            <button onclick="add('.')">.</button>
+            <button onclick="add('0')">0</button>
+            <button onclick="add('+')">+</button>
+            <button onclick="add('/')">/</button>
+            <button onclick="scin('tan')">tan</button>
+
+            <!-- Row 5 -->
+            <button onclick="add('Math.E')">e</button>
+            <button onclick="add('Math.PI')">π</button>
+            <button onclick="add('**')">x^y</button>
+            <button onclick="add('(')">(</button>
+            <button onclick="add(')')">)</button>
+
+            <!-- Row 6 -->
+            <button onclick="scin('log')">log</button>
+            <button onclick="scin('sqrt')">√</button>
+            <button onclick="scin('exp')">exp</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
